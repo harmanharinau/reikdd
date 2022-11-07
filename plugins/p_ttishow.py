@@ -239,7 +239,7 @@ async def unban_a_user(bot, message):
 
 
     
-@Client.on_message(filters.command("Download") & filters.incoming)
+@Client.on_message(filters.command("How_To_Watch") & filters.incoming)
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
