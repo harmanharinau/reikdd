@@ -239,14 +239,18 @@ async def unban_a_user(bot, message):
 
 
     
-@Client.on_message(filters.command('Download') & filters.user(ADMINS))
-async def list_users(bot, message):
-    raju = await message.reply('Getting Tutorial')
-    return
-          [[
-            InlineKeyboardButton('𝙷𝙾𝚆 𝚃𝙾 𝚄𝚂𝙴 𝙼𝙴', url=f"https://t.me/mdisklink_link/2"),
-            InlineKeyboardButton('📢 UPDATES 📢', url='https://t.me/TechnicalCynite')
-        ]]
+@Client.on_message(filters.command("Download") & filters.incoming)
+async def start(client, message):
+    if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
+        buttons = [
+            [
+                InlineKeyboardButton('𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐀𝐧𝐨𝐭𝐡𝐞𝐫 𝐆𝐫𝐨𝐮𝐩', url='http://t.me/{temp.U_NAME}?startgroup=true')
+            ],
+            [
+                InlineKeyboardButton('⚡ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ⚡', url='https://t.me/mdisklink_link/2')
+            ]
+            ]
+        reply_markup = InlineKeyboardMarkup(buttons)
 
 @Client.on_message(filters.command('chats') & filters.user(ADMINS))
 async def list_chats(bot, message):
