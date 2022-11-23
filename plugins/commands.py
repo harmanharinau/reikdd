@@ -29,7 +29,7 @@ async def start(client, message):
                 InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url=f"https://t.me/Cyniteofficial"),
             ],
             [
-                InlineKeyboardButton('⚡ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ⚡', url='https://t.me/mdisklink_link/2')
+                InlineKeyboardButton('⚡ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ⚡', url='https://youtu.be/4b9np8RCHRs')
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -89,7 +89,7 @@ async def start(client, message):
             InlineKeyboardButton('➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
             InlineKeyboardButton('🔍sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖ᴜᴘᴅᴀᴛᴇs', url='https://t.me/TechnicalCynite')
+            InlineKeyboardButton('🤖ᴜᴘᴅᴀᴛᴇs', url='https://t.me/Dkprovider')
         ], [
             InlineKeyboardButton('ℹ️ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('🔰ᴀʙᴏᴜᴛ', callback_data='about')
