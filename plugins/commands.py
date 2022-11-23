@@ -88,8 +88,8 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('🔍sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖ᴜᴘᴅᴀᴛᴇs', url='https://t.me/Dkprovider')
+            InlineKeyboardButton('💻ᴅᴇᴠᴇʟᴏᴘᴇʀ', url='https://t.me/cyniteofficial'),
+            InlineKeyboardButton('🤖ᴜᴘᴅᴀᴛᴇs', url='https://t.me/dkprovider')
         ], [
             InlineKeyboardButton('ℹ️ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('🔰ᴀʙᴏᴜᴛ', callback_data='about')
